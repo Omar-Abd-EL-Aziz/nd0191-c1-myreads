@@ -21,7 +21,7 @@ function App() {
     let entered = true;
     if (userSearch) {
       BooksApi.search(userSearch).then((results) => {
-        if (results.error) {
+        if (results?.error) {
           console.log(results);
         } else {
           if (entered) {
